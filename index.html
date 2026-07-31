@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f2d3d">
+<title>Fred 投资平台 · 网页版</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+body { font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif; background:#f4f6f9; color:#2c3e50; max-width:780px; margin:0 auto; padding:0 0 60px; }
+.head { background:linear-gradient(135deg,#1f2d3d,#34495e); color:#fff; padding:20px 18px 16px; }
+.head h1 { font-size:20px; font-weight:700; }
+.head .sub { font-size:12px; opacity:.75; margin-top:4px; line-height:1.6; }
+.nav { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid #e3e8ef; display:flex; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.nav a { flex:0 0 auto; padding:11px 14px; font-size:13px; color:#5d6d7e; text-decoration:none; white-space:nowrap; border-bottom:2px solid transparent; }
+.nav a.active { color:#3498db; border-bottom-color:#3498db; font-weight:600; }
+.sec { padding:6px 14px 4px; }
+.sec-t { font-size:14px; font-weight:700; color:#3498db; margin:18px 2px 10px; }
+.idx-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; }
+.idx { background:#fff; border-radius:12px; padding:12px 14px; box-shadow:0 1px 6px rgba(44,62,80,.06); }
+.idx-n { font-size:12px; color:#5d6d7e; }
+.idx-p { font-size:19px; font-weight:700; margin-top:2px; }
+.idx-c { font-size:13px; font-weight:600; }
+.idx-s { font-size:11px; color:#95a5a6; margin-top:3px; }
+.card { background:#fff; border-radius:12px; padding:13px 15px; margin-bottom:11px; box-shadow:0 1px 6px rgba(44,62,80,.06); }
+.card.warn { border-left:3px solid #e67e22; }
+.up { color:#e74c3c; } .down { color:#27ae60; }
+.muted { color:#95a5a6; font-size:13px; padding:14px; text-align:center; }
+.wl-hd { display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+.wl-nm { font-size:16px; font-weight:700; }
+.wl-code { font-size:11px; color:#95a5a6; font-weight:400; }
+.wl-pr { font-size:17px; font-weight:700; white-space:nowrap; }
+.wl-pr i { font-size:12px; font-style:normal; }
+.wl-mkt { font-size:11px; color:#95a5a6; margin-top:2px; }
+.wl-kv { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12px; color:#5d6d7e; margin-top:8px; }
+.wl-kv b { color:#2c3e50; }
+.wl-fin { font-size:13px; color:#34495e; line-height:1.7; margin-top:8px; }
+.rep { display:flex; flex-wrap:wrap; gap:4px 10px; font-size:12px; padding:6px 0; border-top:1px dashed #eef1f4; align-items:baseline; }
+.rep-d { color:#95a5a6; white-space:nowrap; }
+.rep-b { color:#3498db; white-space:nowrap; }
+.rep-t { color:#34495e; flex:1 1 200px; }
+.rep-r { color:#27ae60; font-weight:600; white-space:nowrap; }
+.wl-cross { font-size:12px; color:#b9770e; line-height:1.7; background:#fdf2e9; border-radius:8px; padding:8px 10px; margin-top:9px; }
+.tag { display:inline-block; font-size:11px; color:#3498db; background:#eaf4fc; border-radius:6px; padding:2px 8px; margin:6px 6px 0 0; }
+.kzg-hd { display:flex; align-items:center; gap:8px; font-size:11px; margin-bottom:6px; }
+.kzg-cat { color:#3498db; font-weight:600; }
+.kzg-v { padding:1px 7px; border-radius:6px; }
+.v-ok { background:#e8f8f0; color:#27ae60; }
+.v-warn { background:#fdecea; color:#e74c3c; }
+.kzg-tm { color:#95a5a6; margin-left:auto; }
+.kzg-title { font-size:14px; font-weight:700; line-height:1.5; }
+.kzg-body { font-size:13px; color:#34495e; line-height:1.7; margin-top:6px; }
+.kzg-tags { font-size:11px; color:#3498db; margin-top:6px; }
+.rs-title { font-size:14px; font-weight:700; }
+.rs-logic { font-size:13px; color:#34495e; line-height:1.7; margin-top:6px; }
+.rs-meta { font-size:11px; color:#95a5a6; margin-top:6px; }
+.vf-hd { font-size:13px; font-weight:700; display:flex; gap:8px; align-items:center; }
+.vf-lv { font-size:11px; color:#e74c3c; background:#fdecea; border-radius:6px; padding:2px 7px; white-space:nowrap; }
+.vf-reason { font-size:12px; color:#34495e; line-height:1.7; margin-top:6px; }
+.dr-title { font-size:16px; font-weight:700; }
+.dr-date { font-size:11px; color:#95a5a6; margin-top:2px; }
+.dr-sec { margin-top:10px; }
+.dr-h { font-size:13px; font-weight:700; color:#3498db; }
+.dr-t { font-size:13px; color:#34495e; line-height:1.75; margin-top:3px; }
+.dr-note { font-size:11px; color:#95a5a6; margin-top:10px; line-height:1.6; }
+.foot { text-align:center; font-size:11px; color:#95a5a6; margin-top:26px; line-height:1.8; padding:0 14px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <h1>Fred 投资平台 · 网页版</h1>
+  <div class="sub">每 30 分钟自动更新 · 数据来源：知识星球 + 腾讯自选股<br>本页生成于 2026-07-31 17:32 · 电脑端有实时完整版（本机文件）</div>
+</div>
+<nav class="nav" id="nav">
+  <a href="#idx" class="active">大盘</a>
+  <a href="#wl">自选股</a>
+  <a href="#kzg">口罩哥</a>
+  <a href="#rs">研报精读</a>
+  <a href="#vf">观点验证</a>
+  <a href="#dr">每日复盘</a>
+</nav>
+
+<section class="sec" id="idx"><div class="sec-t">今日大盘</div><div class="idx-grid">
+  <div class="idx up">
+    <div class="idx-n">上证指数</div>
+    <div class="idx-p">3843.72</div>
+    <div class="idx-c">+1.03%</div>
+    <div class="idx-s">20日 -4.94% · 年内 -3.15%</div>
+  </div>
+  <div class="idx up">
+    <div class="idx-n">深证成指</div>
+    <div class="idx-p">13664.35</div>
+    <div class="idx-c">+2.85%</div>
+    <div class="idx-s">20日 -12.39% · 年内 +1.03%</div>
+  </div>
+  <div class="idx up">
+    <div class="idx-n">创业板指</div>
+    <div class="idx-p">3376.82</div>
+    <div class="idx-c">+4.07%</div>
+    <div class="idx-s">20日 -16.00% · 年内 +5.42%</div>
+  </div>
+  <div class="idx up">
+    <div class="idx-n">沪深300</div>
+    <div class="idx-p">4609.31</div>
+    <div class="idx-c">+1.31%</div>
+    <div class="idx-s">20日 -4.81% · 年内 -0.45%</div>
+  </div>
+  <div class="idx down">
+    <div class="idx-n">恒生指数</div>
+    <div class="idx-p">25809.61</div>
+    <div class="idx-c">-0.19%</div>
+    <div class="idx-s">20日 +10.53% · 年内 +0.70%</div>
+  </div></div></section>
+<section class="sec" id="wl"><div class="sec-t">我的自选股</div>
+  <div class="card">
+    <div class="wl-hd">
+      <div class="wl-nm">招商银行 <span class="wl-code">sh600036</span></div>
+      <div class="wl-pr down">39.62 <i>-2.29%</i></div>
+    </div>
+    <div class="wl-mkt">上海主板 · A股</div>
+    <div class="wl-kv">
+      <span>PE <b>6.63</b></span><span>PB <b>0.90</b></span>
+      <span>股息 <b>5.09%</b></span><span>市值 <b>9992亿</b></span>
+      <span>年内 <b>-1.16%</b></span>
+    </div>
+    <div class="wl-fin">2026Q1 营收 869亿、归母净利 379亿，存款 10.04万亿；资产质量稳健、拨备厚。单日 -2.29%，年内 -1.16%。股息率 5.09% 居银行前列。</div>
+    
+      <div class="rep">
+        <span class="rep-d">2026-05-10</span>
+        <span class="rep-b">国盛证券</span>
+        <span class="rep-t">一季报点评：营收增速提升，财富管理向好</span>
+        <span class="rep-r">买入</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-05-08</span>
+        <span class="rep-b">国海证券</span>
+        <span class="rep-t">公司动态研究：营收增速回升，资产质量保持优良</span>
+        <span class="rep-r">买入</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-05-04</span>
+        <span class="rep-b">长江证券</span>
+        <span class="rep-t">如何理解业绩的预期与分歧</span>
+        <span class="rep-r">买入</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-05-01</span>
+        <span class="rep-b">中泰证券</span>
+        <span class="rep-t">一季报：业绩改善，财富管理持续发力</span>
+        <span class="rep-r">增持</span>
+      </div>
+    <div class="wl-cross">星球对照：口罩哥 7.14 收录光大证券《长鑫科技 IPO 能为金融股增收几何》——招行作为银行股是长鑫 IPO 承销/配售与持有方之一，IPO 上量对银行中收有边际贡献，与你的长鑫持仓形成间接联动。</div>
+    <span class="tag">银行</span><span class="tag">高股息</span><span class="tag">财富管理</span>
+  </div>
+  <div class="card">
+    <div class="wl-hd">
+      <div class="wl-nm">比亚迪 <span class="wl-code">sz002594</span></div>
+      <div class="wl-pr down">95.77 <i>-0.07%</i></div>
+    </div>
+    <div class="wl-mkt">深圳主板 · A股</div>
+    <div class="wl-kv">
+      <span>PE <b>31.70</b></span><span>PB <b>3.82</b></span>
+      <span>股息 <b>0.37%</b></span><span>市值 <b>8731亿</b></span>
+      <span>年内 <b>-1.64%</b></span>
+    </div>
+    <div class="wl-fin">2026Q1 营收 1502亿、归母净利 41亿（Q1 为淡季，TTM 净利约 275亿）；毛利率约 17.4%，研发单季 113亿。年内 -1.64%，近期在 95 元附近震荡。</div>
+    
+      <div class="rep">
+        <span class="rep-d">2026-07-07</span>
+        <span class="rep-b">长江证券</span>
+        <span class="rep-t">6月销量点评：出口单月 17.5 万辆创新高，出海与闪充共振</span>
+        <span class="rep-r">买入</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-07-03</span>
+        <span class="rep-b">国联民生</span>
+        <span class="rep-t">系列46：6月出口创新高，闪充拉动内需</span>
+        <span class="rep-r">增持</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-06-16</span>
+        <span class="rep-b">方正证券</span>
+        <span class="rep-t">拐点改善迹象明确，海内外需求共振修复可期</span>
+        <span class="rep-r">—</span>
+      </div>
+    <div class="wl-cross">星球对照：口罩哥本周主线聚焦 AI 硬件与存储，未直接覆盖比亚迪；但「闪充+出海」双轮与星球里电动车上游链条（固态电池、PCB、光模块）在电动化/智能化主线有间接共振，多家券商给「股价底部、修复可期」判断。</div>
+    <span class="tag">新能源车</span><span class="tag">出口</span><span class="tag">闪充</span>
+  </div>
+  <div class="card">
+    <div class="wl-hd">
+      <div class="wl-nm">长鑫科技 <span class="wl-code">sh688825</span></div>
+      <div class="wl-pr up">53.97 <i>+2.08%</i></div>
+    </div>
+    <div class="wl-mkt">科创板 · 新股（C字头，无涨跌停）</div>
+    <div class="wl-kv">
+      <span>PE <b>128.02</b></span><span>PB <b>25.90</b></span>
+      <span>股息 <b>—</b></span><span>市值 <b>3.6万亿</b></span>
+      <span>年内 <b>新股 · 7.24 上市</b></span>
+    </div>
+    <div class="wl-fin">2026Q1 营收 508亿、归母净利 248亿；TTM 营收 1064亿，毛利率约 23.8%，经营现金流 426亿。国产 DRAM 龙头，7.24 登陆科创板，上市初期流通盘仅约 6.7%，换手率高。</div>
+    
+      <div class="rep">
+        <span class="rep-d">2026-07-24</span>
+        <span class="rep-b">国金证券</span>
+        <span class="rep-t">冉冉升起的中国 DRAM 龙头，充分受益存储高景气周期</span>
+        <span class="rep-r">买入</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-07-22</span>
+        <span class="rep-b">中泰证券</span>
+        <span class="rep-t">打破 DRAM 海外垄断的本土破局者，存储大周期下驶入成长快车道</span>
+        <span class="rep-r">—</span>
+      </div>
+      <div class="rep">
+        <span class="rep-d">2026-07-19</span>
+        <span class="rep-b">华西证券</span>
+        <span class="rep-t">公司深度：长鑫科技，中国「存」存世界</span>
+        <span class="rep-r">—</span>
+      </div>
+    <div class="wl-cross">星球对照：口罩哥 7.27 收录野村《首次覆盖长鑫科技，目标价 116 元》——与国金/中泰/华西等国内券商逻辑共振：地缘封锁下国产 DRAM 溢价已现。当前 53.97 距野村 116 目标价约 +115% 空间（新股波动大，注意风险）。</div>
+    <span class="tag">半导体</span><span class="tag">DRAM</span><span class="tag">国产替代</span>
+  </div></section>
+<section class="sec" id="kzg"><div class="sec-t">口罩哥 · 要点</div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">原创研报</span>
+      <span class="kzg-v v-ok">单一信源</span>
+      <span class="kzg-tm">7.31</span>
+    </div>
+    <div class="kzg-title">K Research 03 · 内存吃掉了智能的差价</div>
+    <div class="kzg-body">OpenAI 剧烈降价不等于成本崩塌，而是模型商牺牲毛利转嫁硬件通胀。存储吃掉推理与终端利润，AI 栈定价权已全面倾斜。</div>
+    <div class="kzg-tags">#AI硬件 #存储 #定价权</div>
+  </div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">研报转载</span>
+      <span class="kzg-v v-ok">单一信源</span>
+      <span class="kzg-tm">7.30</span>
+    </div>
+    <div class="kzg-title">伯恩斯坦 · SK海力士 2Q26：ASP 有望下半年改善</div>
+    <div class="kzg-body">NV 芯片推迟导致海力士高价货卖不出去，2Q 营收没达标。大跌因市场认为财报靠投资铠侠赚的钱撑场面，但 2026 年底开始落地订单。</div>
+    <div class="kzg-tags">#半导体 #SK海力士</div>
+  </div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">研报转载</span>
+      <span class="kzg-v v-ok">单一信源</span>
+      <span class="kzg-tm">7.29</span>
+    </div>
+    <div class="kzg-title">摩根大通 · 博通三星存储代工 MOU</div>
+    <div class="kzg-body">博通锁定三星巨额存储与代工产能，绑定下游定制芯片需求。AI 竞争焦点从算力设计转向供应链产能抢占，大概率是一个 mini cycle。</div>
+    <div class="kzg-tags">#半导体 #博通 #三星</div>
+  </div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">研报转载</span>
+      <span class="kzg-v v-ok">单一信源</span>
+      <span class="kzg-tm">7.29</span>
+    </div>
+    <div class="kzg-title">高盛 · FOMC 圆桌会议</div>
+    <div class="kzg-body">高盛将美联储加息概率上调至 35%，主因中东战事推动油价反弹与关税效应叠加。按鲍威尔过往经验，除非完全走自己的路，否则加息概率极低。</div>
+    <div class="kzg-tags">#宏观 #美联储</div>
+  </div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">研报转载</span>
+      <span class="kzg-v v-ok">单一信源</span>
+      <span class="kzg-tm">7.27</span>
+    </div>
+    <div class="kzg-title">野村 · 首次覆盖长鑫科技，目标价 116 元</div>
+    <div class="kzg-body">地缘封锁未破，国产 DRAM 溢价已现。预估 2026 年出货单价 1.4 万美金，仅为美光两成。野村目标价直接给到 116。</div>
+    <div class="kzg-tags">#国产替代 #DRAM #长鑫</div>
+  </div>
+  <div class="card">
+    <div class="kzg-hd">
+      <span class="kzg-cat">星主观点</span>
+      <span class="kzg-v v-warn">存疑</span>
+      <span class="kzg-tm">7.25</span>
+    </div>
+    <div class="kzg-title">5000 亿美元，英伟达海力士</div>
+    <div class="kzg-body">口罩哥点评英伟达与海力士 5000 亿美元合作规模。互动最高（37 赞 / 2971 阅读），正文未展开。</div>
+    <div class="kzg-tags">#英伟达 #海力士</div>
+  </div></section>
+<section class="sec" id="rs"><div class="sec-t">研报精读</div>
+  <div class="card warn">
+    <div class="rs-title">K Research 03 · 内存吃掉了智能的差价</div>
+    <div class="rs-logic">核心逻辑：OpenAI 降价本质是模型商牺牲毛利消化硬件通胀，存储环节正在吞噬推理与终端利润，AI 栈定价权全面向存储倾斜。</div>
+    <div class="rs-meta">置信度：中（原创研报，单一信源） · 涉及板块：AI 硬件、存储芯片、HBM</div>
+  </div>
+  <div class="card ">
+    <div class="rs-title">野村 · 首次覆盖长鑫科技，目标价 116 元</div>
+    <div class="rs-logic">核心逻辑：地缘封锁下国产 DRAM 溢价已现，2026 年出货单价预估 1.4 万美金，仅为美光两成，性价比即竞争力。</div>
+    <div class="rs-meta">置信度：中（野村首次覆盖，单一信源） · 涉及标的：长鑫科技 · 板块：国产替代、DRAM</div>
+  </div>
+  <div class="card ">
+    <div class="rs-title">摩根大通 · 博通三星存储代工 MOU</div>
+    <div class="rs-logic">核心逻辑：博通锁定三星产能绑定定制芯片需求，AI 竞争从算力设计转向供应链产能抢占，大概率构成一个 mini cycle。</div>
+    <div class="rs-meta">置信度：中（单一信源） · 涉及标的：博通 AVGO、三星 · 板块：AI 算力、半导体供应链</div>
+  </div>
+  <div class="card warn">
+    <div class="rs-title">高盛 · IPO 激增的危险信号</div>
+    <div class="rs-logic">核心逻辑：2250 亿美元 IPO 融资是 AI 资本开支暴增倒逼的股权套现与流动性抽血，并非牛市续航信号。</div>
+    <div class="rs-meta">置信度：中（高盛策略报告，单一信源） · 涉及板块：宏观、美股流动性</div>
+  </div></section>
+<section class="sec" id="vf"><div class="sec-t">观点验证</div>
+  <div class="card warn">
+    <div class="vf-hd"><span class="vf-lv">存疑</span>「5000 亿美元，英伟达海力士」</div>
+    <div class="vf-reason">数字来源不明，正文未展开，未标注出处。互动量最高（37 赞）但信息密度最低，需核实是官方公告还是市场传闻。</div>
+  </div>
+  <div class="card warn">
+    <div class="vf-hd"><span class="vf-lv">存疑</span>「CWW 最强势，三位数油价用 3 月初的办法」</div>
+    <div class="vf-reason">主观判断。CWW 指代不明（需向星主确认标的），「3 月初的办法」指代不明，油价预测无数据支撑。</div>
+  </div>
+  <div class="card warn">
+    <div class="vf-hd"><span class="vf-lv">存疑</span>「O5 来了，尽快测试」</div>
+    <div class="vf-reason">极简快讯，O5 指代不明（可能为某 AI 模型版本），无来源链接，无法交叉验证。</div>
+  </div></section>
+<section class="sec" id="dr"><div class="sec-t">每日复盘</div>
+  <div class="card">
+    <div class="dr-title">创业板反弹 4%，AI 硬件主线回到视野中心</div>
+    <div class="dr-date">2026-07-31 周五</div>
+    
+      <div class="dr-sec"><div class="dr-h">市场事实</div><div class="dr-t">A 股三大指数收涨：创业板 +4.07% 领涨，深成 +2.85%，上证 +1.03%，沪深300 +1.31%；恒生微跌 -0.19%。拉长到 20 日维度，创业板仍 -16%，沪深300 -4.8%，今天属于深跌后的单日修复，趋势层面尚未确认反转。</div></div>
+      <div class="dr-sec"><div class="dr-h">信源交叉</div><div class="dr-t">口罩哥星球本周密集出现 AI 硬件供应链内容：存储环节利润占比上升（K Research 03）、博通锁定三星产能（摩根大通）、野村首覆长鑫给 116 元目标价、伯恩斯坦判断海力士 2Q 疲弱是英伟达芯片推迟的连带影响。四条独立研报指向同一条主线：AI 竞争从芯片设计转向产能与存储定价权。</div></div>
+      <div class="dr-sec"><div class="dr-h">风险变量</div><div class="dr-t">高盛将美联储加息概率上调至 35%（中东局势推油价叠加关税效应）。若油价走向三位数，成长股估值将受压。口罩哥自己也提示「三位数油价用 3 月初的办法」应对，说明他对这个风险有预案但未公开细节。</div></div>
+      <div class="dr-sec"><div class="dr-h">我的判断（待你审）</div><div class="dr-t">今天的反弹与 AI 硬件主线信息共振，短期情绪修复概率大；但 20 日趋势未修复，油价与加息预期是悬顶变量，不宜把单日大涨解读为趋势反转。验证点：未来一周存储与算力硬件板块能否持续跑赢大盘。</div></div>
+      <div class="dr-sec"><div class="dr-h">明日关注</div><div class="dr-t">存储板块成交活跃度、布伦特原油价格、美股英伟达与博通走势对 A 股的映射。</div></div>
+    <div class="dr-note">本复盘由 Layla 综合行情与星球内容撰写，Fred 审核后可改。不构成投资建议。</div>
+  </div></section>
+
+<div class="foot">Fred 投资平台 · 网页版（GitHub Pages 托管）<br>内容仅为公开行情与研报摘要，不构成投资建议<br>生成于 2026-07-31 17:32</div>
+<script>
+// 导航高亮 + 锚点平滑滚动
+var nav = document.getElementById('nav');
+var links = nav.querySelectorAll('a');
+links.forEach(function(a){ a.addEventListener('click', function(e){ e.preventDefault(); var t=document.querySelector(a.getAttribute('href')); if(t) t.scrollIntoView({behavior:'smooth',block:'start'}); }); });
+var secs = document.querySelectorAll('section.sec');
+var obs = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ var id=en.target.id; links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href')==='#'+id); }); } }); }, {rootMargin:'-48px 0px -70% 0px'});
+secs.forEach(function(s){ obs.observe(s); });
+</script>
+</body>
+</html>
