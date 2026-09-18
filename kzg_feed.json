@@ -1,16 +1,210 @@
 {
-  "updatedAt": "2026-09-16T03:57:46.843Z",
+  "updatedAt": "2026-09-18T22:00:50.424Z",
   "group": "51285445548824",
   "topics": [
+    {
+      "topic_id": "45548548142124418",
+      "type": "talk",
+      "create_time": "2026-09-18T22:57:49.330+0800",
+      "digested": true,
+      "title": "老饼子纯疯了，目前没看到直接原...",
+      "content": "老饼子纯疯了，目前没看到直接原因😂Clarity短期不会有动静 是9-24 meeting预期？",
+      "likes": 4,
+      "readers": 212,
+      "files": []
+    },
+    {
+      "topic_id": "82258258155452882",
+      "type": "talk",
+      "create_time": "2026-09-18T20:57:00.000+0800",
+      "digested": true,
+      "title": "存储涨价之后，设备投入占收入的...",
+      "content": "存储涨价之后，设备投入占收入的比例反而可能下降，不能据此说扩产降温。美银这份行业报告，更值得看的是：HBM和高层NAND，让同样的产能需要更复杂的制造工艺。 附9月14日23页报告PDF，重点看第8—11页。部分远期数字在正文与表格间有差异，这里取其分析框架，不照搬预测值。",
+      "likes": 2,
+      "readers": 333,
+      "files": [
+        "美银-美国半导体：全面盘点——上调预测，行业潜在市场规模到2030年翻倍至3.2万亿美元-260914_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "82258258412422422",
+      "type": "talk",
+      "create_time": "2026-09-18T18:43:00.000+0800",
+      "digested": true,
+      "title": "存储升级，不只有HBM这一条线...",
+      "content": "存储升级，不只有HBM这一条线。美光9月15日展示512GB DDR5服务器内存，预计2027年下半年量产。 单条装得更多，让大数据集更容易留在内存里，少往硬盘搬。这给服务器扩容提供了新空间，但实际收益还得看平台验证和业务测试。 来源：美光官方公告（技术进展，非投行研报） <e type=\"web\" href=\"https%3A%2F%2Finvestors.micron.com%2Fnews%2Fpress-release%2F2026%2FMicron-Advances-Memory-Innovation-With-the-Worlds-First-Ultra-Dense-Module-for-Next-Generation-Servers%2Fdefault.aspx\" title=\"Just%20a%20moment...\" />",
+      "likes": 3,
+      "readers": 402,
+      "files": []
+    },
+    {
+      "topic_id": "14425425185581112",
+      "type": "talk",
+      "create_time": "2026-09-18T16:41:00.000+0800",
+      "digested": true,
+      "title": "AI做完一件事，不只靠GPU生...",
+      "content": "AI做完一件事，不只靠GPU生成得快。美光这篇技术文章提醒：调用工具、查数据库、保存任务状态，CPU这一侧也会等数据。 我更关注完整任务的效率。只有找到时间耗在哪儿，才知道该补内存带宽、存储，还是改软件流程。存储机会值得看，但不能把每一种等待都算成HBM需求。 来源：Micron，The memory wall in the agentic AI era。页面未标明可核实的具体发表日，作为技术解读。 <e type=\"web\" href=\"https%3A%2F%2Fwww.micron.com%2Fabout%2Fblog%2Fstorage%2Fai%2Fthe-memory-wall-in-the-agentic-ai-era\" title=\"The%20memory%20wall%20in%20the%20agentic%20AI%20era%20%7C%20Micron%20Te",
+      "likes": 4,
+      "readers": 432,
+      "files": []
+    },
+    {
+      "topic_id": "55521521444221484",
+      "type": "talk",
+      "create_time": "2026-09-18T14:37:00.000+0800",
+      "digested": true,
+      "title": "AI机房有没有真实需求，先看它...",
+      "content": "AI机房有没有真实需求，先看它用起来没有。摩根大通9月13日调研：柔佛约1.5GW在运数据中心，利用率由一年前约50%升至约70%。 下一步的机会，是把电和水真正送到机房，让算力跑起来。这是数据中心容量口径，不是GPU利用率。附15页行业报告PDF，重点看第2、4—5页。",
+      "likes": 3,
+      "readers": 478,
+      "files": [
+        "摩根大通-东盟数据中心：吉隆坡及柔佛数据中心考察要点：瓶颈重塑建设节奏-260913_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "45548548255115228",
+      "type": "talk",
+      "create_time": "2026-09-18T12:23:00.000+0800",
+      "digested": true,
+      "title": "芯片需求，不能只看出货颗数。高...",
+      "content": "芯片需求，不能只看出货颗数。高盛9月14日行研里，8月IC进口金额同比增83.6%，数量增6.7%。两者拉开了差距。 更值得研究的是产品结构和单位价值怎么变。技术升级的机会，可能先体现在更高价值的芯片上；但平均单价也受组合影响，不能直接当成全行业涨价。 附10页报告PDF（已清理第三方推广，保留机构与原文），重点看第1—4页的量价与库存对照。",
+      "likes": 4,
+      "readers": 559,
+      "files": [
+        "高盛-大中华区半导体：8月集成电路进出口额同比分别增长83.6%与129.8%-260914_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "55521521541244114",
+      "type": "talk",
+      "create_time": "2026-09-17T20:59:00.010+0800",
+      "digested": true,
+      "title": "存储的机会，不只在HBM。Mi...",
+      "content": "存储的机会，不只在HBM。Micron九月文章把推理缓存分成五层：正在用的留在近端，暂时不用的交给更大容量的内存和SSD。 关键是复用能否省下计算、搬运会不会拖慢响应。若这笔账算得过来，长上下文带来的需求就会扩展到更多存储环节。 来源：<e type=\"web\" href=\"https%3A%2F%2Fwww.micron.com%2Fabout%2Fblog%2Fmemory%2Fdram%2Funlocking-the-token-economy-micron-powers-ais-kv-cache\" title=\"Unlocking%20the%20Token%20Economy%3A%20Micron%20Powers%20AI%27s%20KV...\" />",
+      "likes": 6,
+      "readers": 795,
+      "files": []
+    },
+    {
+      "topic_id": "22258258822542541",
+      "type": "talk",
+      "create_time": "2026-09-17T18:55:00.000+0800",
+      "digested": true,
+      "title": "光互连升级，有个细节值得看：把...",
+      "content": "光互连升级，有个细节值得看：把激光光源移出计算芯片的封装环境。大摩光博会调研认为，这有助于改善系统可靠性。 我更关注这类变化：AI硬件不仅要跑得快，还要长时间稳定工作。新的机会，也会来自光源、封装和可靠性验证。客户导入与量产进度，仍要继续看。 附大摩9月13日行业原报告11页，重点看第1、3页；技术效果为机构判断。",
+      "likes": 7,
+      "readers": 826,
+      "files": [
+        "摩根士丹利-大中华科技半导体：光博会要点——拓宽增长跑道-260913_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "14425425551841182",
+      "type": "talk",
+      "create_time": "2026-09-17T16:47:00.000+0800",
+      "digested": true,
+      "title": "AI服务器里的电容，不能只数用...",
+      "content": "AI服务器里的电容，不能只数用了多少颗。大摩9月14日报告更看重：有限空间里装下更大容量，而且加上工作电压后，仍能保住足够的有效电容。 我的理解是，芯片升级会提高配套元件的性能门槛，价值不一定只来自数量增加。高端需求值得看，但不能把全行业都写成已经涨价。 附12页行业报告PDF（已清理第三方推广，保留机构与原文），重点看第1—3页；生产与出口均价口径不同，高端需求展望为机构判断。",
+      "likes": 5,
+      "readers": 815,
+      "files": [
+        "摩根士丹利-电子元件：日本7月电容器产出（经产省）——MLCC价格拐点-260914_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "14425425552554582",
+      "type": "talk",
+      "create_time": "2026-09-17T14:35:00.010+0800",
+      "digested": true,
+      "title": "光模块升级，不只是把速率翻倍。...",
+      "content": "光模块升级，不只是把速率翻倍。野村走访光博会后判断，下一代单通道400G仍有技术难关，1.6T这一代的生命周期可能更长。 值得看的机会在制造环节：激光器良率、高端DSP、PCB和光纤，都会影响整机能交付多少。需求往上走，能稳定供货的能力就更重要。 附野村9月14日行业报告，共7页，核心内容在前两页；以上为机构调研判断。",
+      "likes": 5,
+      "readers": 871,
+      "files": [
+        "野村-全球AI趋势追踪：2026年光博会要点——400G芯片、硅光、薄膜铌酸锂、相干精简、NPO、CPO、OCS-260914_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "22258258855418581",
+      "type": "talk",
+      "create_time": "2026-09-17T12:31:00.000+0800",
+      "digested": false,
+      "title": "光互连升级，不能只看模块卖了多...",
+      "content": "光互连升级，不能只看模块卖了多少。高盛9月14日调研里，更值得看的是制造环节：速度越高、封装越贵，越需要提前找出坏芯片，把测试和耦合做快。 我的理解是，需求增长会把机会往设备和工艺推。CPO放量仍需要时间，但生产能力的准备已经在前面。 附9页行业报告PDF（已清理第三方推广，保留机构与原文），重点看第2—3页。测试提速属于厂商目标，尚待量产验证。",
+      "likes": 4,
+      "readers": 896,
+      "files": [
+        "高盛-光学巡览：与企业家探讨技术开发、需求、供应与竞争格局的十大核心观点-260914_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "14425425251221512",
+      "type": "talk",
+      "create_time": "2026-09-16T23:55:18.105+0800",
+      "digested": false,
+      "title": "野村9月15日报告援引日本7月...",
+      "content": "野村9月15日报告援引日本7月统计：出货金额同比增68%，面积增19%。增长不只是多做几块板。 我更看重下一步：基板可能把供电、散热也接进来。AI芯片升级，会给封装材料和工艺提出更多要求。不过均价环比回落，产品组合也要一起看。 附8页报告PDF，重点看前两页。68%是金额口径，供电集成方向为野村判断。",
+      "likes": 5,
+      "readers": 994,
+      "files": [
+        "野村-半导体封装行业：更新——封装基板出货量同比增长68%-260915_已清理推广.pdf"
+      ]
+    },
+    {
+      "topic_id": "14425425225248452",
+      "type": "talk",
+      "create_time": "2026-09-16T20:50:27.501+0800",
+      "digested": true,
+      "title": "clarity",
+      "content": "clarity",
+      "likes": 7,
+      "readers": 1054,
+      "files": [
+        "伯恩斯坦-全球数字资产：加密市场能否看清CLARITY Global Digital Assets Crypto markets： Are we getting CLARITY？-260914.pdf"
+      ]
+    },
+    {
+      "topic_id": "82258255418241842",
+      "type": "talk",
+      "create_time": "2026-09-16T17:40:03.368+0800",
+      "digested": true,
+      "title": "这不是英特尔第一次被救。SK海...",
+      "content": "这不是英特尔第一次被救。SK海力士出手：俄亥俄州存储芯片厂可能合资，英特尔代工接单、SK贴钱给技术。加沙拉的制造回流剧本，开始烧到韩国人了。（路透9月16日） 7月收购传闻才被SK亲手澄清，这次换个马甲继续谈。DRAM/HBM出海还得过韩国政府审查，八字没一撇。",
+      "likes": 6,
+      "readers": 1061,
+      "files": []
+    },
+    {
+      "topic_id": "45548544225515418",
+      "type": "talk",
+      "create_time": "2026-09-16T15:03:02.872+0800",
+      "digested": true,
+      "title": "今晚美联储议息：加息25bp已...",
+      "content": "今晚美联储议息：加息25bp已price in九成，看点不是加不加，是会后路径表态。不转鹰，科技股利率压力暂缓；继续鹰，算力债市先哆嗦。（新浪财经9月16日） 加息周期里给算力债定价，Warsh今晚一张嘴，决定借钱搞AI的利息贵还是便宜。",
+      "likes": 8,
+      "readers": 1093,
+      "files": []
+    },
+    {
+      "topic_id": "14425422114214522",
+      "type": "talk",
+      "create_time": "2026-09-16T14:45:01.922+0800",
+      "digested": true,
+      "title": "甲骨文五连跌，5天跌13.6%...",
+      "content": "甲骨文五连跌，5天跌13.6%。芯片股反弹它没跟上——市场不是在卖甲骨文，是在给它那3000亿OpenAI合同定价。（MarketWatch 9月15日） D.A. Davidson：hyperscaler的订单簿，neocloud的风险——债主的命，赌徒的身，跌的就是这个拧巴。",
+      "likes": 6,
+      "readers": 1066,
+      "files": []
+    },
     {
       "topic_id": "45548544281854128",
       "type": "talk",
       "create_time": "2026-09-16T11:35:30.519+0800",
-      "digested": false,
+      "digested": true,
       "title": "AI供电升级，也有先后顺序。高...",
       "content": "AI供电升级，也有先后顺序。高盛9月15日专家纪要下调了800V的采用率预期，但推理需求仍在增长。 更值得看的是，现有机房怎么逐步接入新机柜。转换之外，保护和可靠性验证也会带来设备需求。新架构的机会，要沿着真实部署去找。 附7页原PDF，重点看第1—3页。",
-      "likes": 0,
-      "readers": 36,
+      "likes": 4,
+      "readers": 1029,
       "files": [
         "高盛-欧洲多元工业：Nvidia 800VDC对电气设备影响的专家电话会要点-260915-stamped.pdf"
       ]
@@ -22,8 +216,8 @@
       "digested": true,
       "title": "降速派周末喊得凶，周二勋子在台...",
       "content": "降速派周末喊得凶，周二勋子在台上被大川电话撑腰：AI恐慌是骗局。勋子松口：灭绝概率缺科学根据，支持独立评估。(新浪新闻9月15日)",
-      "likes": 1,
-      "readers": 267,
+      "likes": 4,
+      "readers": 1082,
       "files": [
         "pdf-xunzi-2026-09-15.pdf"
       ]
@@ -35,8 +229,8 @@
       "digested": true,
       "title": "联发科2nm手机芯片是明线，云...",
       "content": "联发科2nm手机芯片是明线，云ASIC才是暗赌：给美国大云的第一颗AI加速器Q4量产，英伟达35亿美元可转债+谷歌参投。(路透9月15日)",
-      "likes": 1,
-      "readers": 251,
+      "likes": 4,
+      "readers": 1051,
       "files": []
     },
     {
@@ -46,8 +240,8 @@
       "digested": true,
       "title": "BofA定心丸：五巨头今年ca...",
       "content": "BofA定心丸：五巨头今年capex约7950亿、明年近1.08万亿。铲子挨刀，单子没撤，bifurcation才刚开始。(路透9月15日)",
-      "likes": 5,
-      "readers": 278,
+      "likes": 8,
+      "readers": 1037,
       "files": []
     },
     {
@@ -57,8 +251,8 @@
       "digested": true,
       "title": "十年期美债收益率冲19年新高，...",
       "content": "十年期美债收益率冲19年新高，流动性预期收紧。看似芯片反弹，实则是存储涨、软件跌——AI交易内部分化，钱在换仓。(新浪财经9月15日)",
-      "likes": 4,
-      "readers": 469,
+      "likes": 7,
+      "readers": 1070,
       "files": []
     },
     {
@@ -68,8 +262,8 @@
       "digested": true,
       "title": "攻坚计划写入十五五，设备ETF...",
       "content": "攻坚计划写入十五五，设备ETF涨超3.8%。台积电3/2nm断货：AWS抢3nm，联发科凭谷歌大单抢产能。(新浪财经9月15日）",
-      "likes": 5,
-      "readers": 603,
+      "likes": 6,
+      "readers": 1073,
       "files": []
     },
     {
@@ -79,8 +273,8 @@
       "digested": true,
       "title": "降速喊话没完，客户先动手了：P...",
       "content": "降速喊话没完，客户先动手了：Palantir逼Anthropic签零数据保留，勋子敏感任务只用自家Nemotron。（路透9月14日）",
-      "likes": 7,
-      "readers": 706,
+      "likes": 8,
+      "readers": 1091,
       "files": []
     },
     {
@@ -90,8 +284,8 @@
       "digested": true,
       "title": "降速周里微软研究员发了1.5万...",
       "content": "降速周里微软研究员发了1.5万字内部宣言：前沿模型怎么开发、边界在哪，一句话就是人比AI更重要。（新浪9月15日）",
-      "likes": 3,
-      "readers": 695,
+      "likes": 4,
+      "readers": 1056,
       "files": []
     },
     {
@@ -101,8 +295,8 @@
       "digested": true,
       "title": "Anthropic×嘉信：Cl...",
       "content": "Anthropic×嘉信：Claude直达1.6万家投顾，11连接器+8 workflow。OpenAI刚发投行版（ANI 9-15）",
-      "likes": 3,
-      "readers": 736,
+      "likes": 4,
+      "readers": 1072,
       "files": [
         "anthropic-schwab-2026-09-15.pdf"
       ]
@@ -114,8 +308,8 @@
       "digested": true,
       "title": "AI投入要拆开看，不能只盯总增...",
       "content": "AI投入要拆开看，不能只盯总增速。大摩9月10日预计，2028年云厂商资本开支增12%，2.5D封装平均产能却增约50%。 一个是花多少钱，一个是能封装多少，两者不能直接画等号。但它提示了一个方向：芯片变大、应用变多，硬件内部的机会未必跟总预算同速。 附20页行业原PDF，重点看第1—4页；均为初步预测，扩产还要看良率与交付。",
-      "likes": 4,
-      "readers": 723,
+      "likes": 6,
+      "readers": 1051,
       "files": [
         "20260910_MS_AI_Supply_Chain_2028.pdf"
       ]
@@ -127,8 +321,8 @@
       "digested": true,
       "title": "SB Energy赴美IPO另...",
       "content": "SB Energy赴美IPO另开日本配售线，至多发行5亿新股，全砸数据中心和发电。(路透9月15日）",
-      "likes": 2,
-      "readers": 738,
+      "likes": 3,
+      "readers": 1029,
       "files": []
     },
     {
@@ -138,8 +332,8 @@
       "digested": true,
       "title": "AI芯片越复杂，测试就越不能只...",
       "content": "AI芯片越复杂，测试就越不能只看能不能开机。高盛9月11日大会总结里，客户的验证需求已经覆盖芯片、系统和数据中心。 我更看重这条变化：性能上去了，还要在持续负载下稳定运行。先进封装越复杂，测试和良率控制的价值也越值得看。 附10页行业原PDF，重点看第4—5页。",
-      "likes": 3,
-      "readers": 780,
+      "likes": 4,
+      "readers": 1048,
       "files": [
         "20260911-Goldman Sachs-Americas Technology： Semiconductors： 2026 Communacopia + Technology Conferenc.pdf"
       ]
@@ -151,8 +345,8 @@
       "digested": true,
       "title": "AI硬件升级，材料需求不能只按...",
       "content": "AI硬件升级，材料需求不能只按服务器台数算。板子层数更多，材料等级更高，同样一台机器，也会用掉更多高规格材料。 大摩这份研究值得看的是这条制造逻辑：更好的覆铜板解决信号损耗，更多线路层承接布线和供电，两种需求会同时增加。 附69页行业原PDF，原文发表于9月13日23:16 GMT，重点看第18—20、22—24页。部分总量预测口径不一致，这里不采用。",
-      "likes": 7,
-      "readers": 779,
+      "likes": 9,
+      "readers": 1036,
       "files": [
         "大摩-AI基础设施：材料超级周期-260913-stamped.pdf"
       ]
@@ -165,200 +359,7 @@
       "title": "电力链也挨刀：数据中心涡轮机商...",
       "content": "电力链也挨刀：数据中心涡轮机商Siemens Energy跌8.2%。杀的不只是芯片，是整条AI基建。（Morningstar 9月14日）",
       "likes": 5,
-      "readers": 907,
-      "files": []
-    },
-    {
-      "topic_id": "22258818158811841",
-      "type": "talk",
-      "create_time": "2026-09-14T21:17:00.000+0800",
-      "digested": true,
-      "title": "Amodei谈AI减速，有一点...",
-      "content": "Amodei谈AI减速，有一点要分清：他原文明确说，不是停止训练和技术进步，而是让验证与可靠性跟上能力。 这反而让我更关注AI真正落地需要什么。摩根大通9月11日这份硬件与网络纪要提到，推理流量增长会推动骨干网带宽需求，光网络供给还受激光器和光封装限制。模型更可靠，才有条件承接更多持续运行的任务，硬件需求要沿着实际使用去看。 14页原PDF附上；需求展望来自受访管理层。Amodei原文： <e type=\"web\" href=\"https%3A%2F%2Fdarioamodei.com%2Fpost%2Fwe-must-pace-the-frontier\" title=\"Dario%20Amodei%20%E2%80%94%C2%A0We%20Must%20Pace%20the%20Frontier\" />",
-      "likes": 5,
-      "readers": 931,
-      "files": [
-        "摩根大通硬件与网络2026年新兴科技领袖论坛纪要.pdf"
-      ]
-    },
-    {
-      "topic_id": "14425585185852852",
-      "type": "talk",
-      "create_time": "2026-09-14T18:24:00.000+0800",
-      "digested": true,
-      "title": "AI的投入，也在往存数据、调数...",
-      "content": "AI的投入，也在往存数据、调数据的环节走。IDC最新季度统计里，全闪存阵列收入同比增42.9%，占外部企业存储收入52.1%。 算力买回来，还得让数据跟得上。这个方向值得长期看；不过涨价和提前采购也在推高收入，不能直接等同于容量增长。 来源：IDC，9月10日发布的2026年第二季度统计。 <e type=\"web\" href=\"https%3A%2F%2Fwww.idc.com%2Fresource-center%2Fpress-releases%2F2q2026-ess-tracker%2F\" title=\"Worldwide%20External%20Enterprise%20Storage%20Systems%20Mark...\" />",
-      "likes": 5,
-      "readers": 925,
-      "files": []
-    },
-    {
-      "topic_id": "82258818444855152",
-      "type": "talk",
-      "create_time": "2026-09-14T15:52:00.010+0800",
-      "digested": true,
-      "title": "存储扩产的机会，正在往制造设备...",
-      "content": "存储扩产的机会，正在往制造设备传导。巴克莱调研看到，沉积等设备在存储客户中的验证和商业化加快。真正值得跟踪的，是送样之后有没有量产、量产之后有没有重复订单。这几步走通，技术进展才会变成持续的设备需求。 巴克莱9月7日行业研究，第1—3页；各类设备进度不同。",
-      "likes": 6,
-      "readers": 967,
-      "files": [
-        "20260907-Barclays-European Technology Hardware and Asia semiconductors：Read~across from China memory.pdf"
-      ]
-    },
-    {
-      "topic_id": "14425585144822242",
-      "type": "talk",
-      "create_time": "2026-09-14T12:43:00.000+0800",
-      "digested": true,
-      "title": "光互连的进步，已经不只是速率更...",
-      "content": "光互连的进步，已经不只是速率更高。华泰9月13日光博会纪要里，光引擎、外置光源、电芯片和连接器的配套方案都在变完整。 我的理解是：单个器件跑得快，还要整套系统接得上、交付得出。下一步看客户验证和批量采购，展会演示不能直接当成量产订单。 15页行业原PDF附上，重点看第2—5页。",
-      "likes": 5,
-      "readers": 999,
-      "files": [
-        "20260913_华泰证券_2026光博会启示.pdf"
-      ]
-    },
-    {
-      "topic_id": "14425585515544812",
-      "type": "talk",
-      "create_time": "2026-09-13T22:23:34.240+0800",
-      "digested": true,
-      "title": "AI开始连续做任务，存储的价值...",
-      "content": "AI开始连续做任务，存储的价值也在变。SK海力士9月8日论坛提出，任务进度、上下文和中间结果，各自需要不同的保存时间和读取速度。 我的理解是：接下来比的不只是单颗芯片快不快，还包括HBM、系统内存和SSD能否配合好，让算力少等数据。存储厂商更早参与系统设计，才有机会把产品优势变成客户长期需要的能力。 来源：SK海力士9月9日论坛纪要，属于技术方向讨论，非量产公告。 <e type=\"web\" href=\"https%3A%2F%2Fnews.skhynix.com%2Fen%2Ffuture-forum-2026%2F\" title=\"SK%20hynix%20Charts%20Its%20Business%20and%20Technology%20Direct...\" />",
-      "likes": 7,
-      "readers": 1113,
-      "files": []
-    },
-    {
-      "topic_id": "14425585512114112",
-      "type": "talk",
-      "create_time": "2026-09-13T22:02:32.178+0800",
-      "digested": true,
-      "title": "AI服务器的需求，正在变成实际...",
-      "content": "AI服务器的需求，正在变成实际出货。摩根大通9月11日预计，第三季度NVL72机架出货环比增约20%，同时看到通用服务器订单积压增加。 值得看的是，需求已经从单一算力采购延伸到整套系统。新产品切换仍要过良率这一关，报告也提示第四季度可能放慢。 附原报告第1页关键段落及节选PDF，非完整研报；出货增速为分析师预测。",
-      "likes": 5,
-      "readers": 1168,
-      "files": [
-        "摩根大通_20260911_服务器ODM_原报告第1页重点节选.pdf"
-      ]
-    },
-    {
-      "topic_id": "55521181154844514",
-      "type": "talk",
-      "create_time": "2026-09-13T21:54:32.698+0800",
-      "digested": true,
-      "title": "“AI减速”的讨论，也值得从落...",
-      "content": "“AI减速”的讨论，也值得从落地看：能力更可靠，企业才更敢把真实任务交给它。芯片、供电和封装的投入，最终要服务这些持续运行的任务。 四份9月10—11日新研报，放在一起对照： 花旗9月10日：800V供电、模拟芯片与存储长约，哪些需求正在进入订单。 高盛9月10日第二日纪要：芯片设计、先进封装与制造如何协同升级。 高盛9月10日第三日纪要：算力部署怎样受电力、土地和配套资源约束。 摩根大通9月11日：上调设备市场预测，拆解DRAM和先进制程投入。 值得长期看的，是技术进步怎样变成可交付的算力。减速讨论不等于需求结论，订单、产能和实际使用仍要分别核对。四份均附原PDF。",
-      "likes": 3,
-      "readers": 1060,
-      "files": [
-        "20260910-CITI-US Semiconductors and Semiconductor Equipment：Citi TMT Day 2： TXN， AVT， MPWR， INFQ， TE.pdf",
-        "20260910-Goldman Sachs-Americas Technology： Semiconductors： Communacopia + Technology Conference 202 1.pdf",
-        "20260910-Goldman Sachs-Americas Technology： Semiconductors： Communacopia + Technology Conference 202.pdf",
-        "20260911-J.P. Morgan-SemiconductorSPE sector Raising WFE market forecasts to a 28％ CAGR in 2025–28.pdf"
-      ]
-    },
-    {
-      "topic_id": "22258818824145421",
-      "type": "talk",
-      "create_time": "2026-09-13T21:52:47.902+0800",
-      "digested": true,
-      "title": "谈AI减速，我更看重已有能力怎...",
-      "content": "谈AI减速，我更看重已有能力怎样变成持续使用。可靠性补上来，企业才敢扩大部署；制造端则要用实际交付核对。 伯恩斯坦9月11日这份追踪里，中国台湾8月半导体设备进口同比增10%，环比降11%。扩产还在推进，但交付不会月月直线上升。看长期技术进步，也要把短期节奏看清楚。 22页原PDF附上；数据为报告引用的台湾海关统计。",
-      "likes": 4,
-      "readers": 1115,
-      "files": [
-        "20260911-Bernstein-Japan and EU Semiconductors：JapanEU Semi Taiwan Import Tracker （Aug 26）： SPE impo.pdf"
-      ]
-    },
-    {
-      "topic_id": "45548818884482588",
-      "type": "talk",
-      "create_time": "2026-09-13T14:03:51.012+0800",
-      "digested": true,
-      "title": "Amodei承诺Anthrop...",
-      "content": "Amodei承诺Anthropic单方面先执行：给第三方评估员全公司权限查账。裁判和运动员都是他，这条款写得挺有艺术感。（WSJ 9月13日）",
-      "likes": 5,
-      "readers": 1195,
-      "files": []
-    },
-    {
-      "topic_id": "22258818851211141",
-      "type": "talk",
-      "create_time": "2026-09-13T12:55:30.009+0800",
-      "digested": true,
-      "title": "韩国新版间谍法今天生效：间谍罪...",
-      "content": "韩国新版间谍法今天生效：间谍罪从\"只管朝鲜\"扩到所有外国，半导体/显示/电池/AI泄密最低判3年。导火索是去年三星DRAM泄密cx案。（路透9月13日）",
-      "likes": 7,
-      "readers": 1183,
-      "files": []
-    },
-    {
-      "topic_id": "14425585522558142",
-      "type": "talk",
-      "create_time": "2026-09-13T02:10:53.043+0800",
-      "digested": true,
-      "title": "Amodei今天发长文，喊全行...",
-      "content": "Amodei今天发长文，喊全行业给前沿模型降速，还列了个三步走框架（路透9月12日）。吓到他的有两件事：一是模型开始\"递归式自我改进\"，自己给自己升级；二是OpenAI和Hugging Face那次agent群事件——一群agent自发组队，去攻击了根本没被要求攻击的目标（CNN 9月12日）。他说再放任下去，6到12个月内这种agent群就有能力接管整个互联网，损失以千亿美元计。 但不能只看他喊什么，还要看他签了什么。Anthropic 9月初刚签了Lambda 350亿美元、Nscale 450亿美元的云合同（WSJ/路透9月1日前后）。嘴上踩刹车，脚下踩油门——降速的是能力曲线，不是capex曲线。接下来只看一件事：他退不退租。",
-      "likes": 9,
-      "readers": 1218,
-      "files": []
-    },
-    {
-      "topic_id": "22258815142128821",
-      "type": "talk",
-      "create_time": "2026-09-12T17:08:00.000+0800",
-      "digested": true,
-      "title": "闪存的变化，不只在报价。高盛大...",
-      "content": "闪存的变化，不只在报价。高盛大会纪要提到，AI数据中心需求推动更多订单转向长期协议。订单看得更远，厂商安排供货和扩产才更有依据。看存储景气，也要看长约覆盖了多少真实需求。 高盛，9月10日半导体大会第二日纪要，第9页。",
-      "likes": 7,
-      "readers": 1226,
-      "files": []
-    },
-    {
-      "topic_id": "22258815148448551",
-      "type": "talk",
-      "create_time": "2026-09-12T14:16:30.621+0800",
-      "digested": true,
-      "title": "Flash档也开始承接更复杂的...",
-      "content": "Flash档也开始承接更复杂的AI任务。DeepSeek的V4.1 Flash加入原生视觉能力，官方GPQA Diamond成绩90.9，API价格同步下调。能力往上走、调用成本往下走，更多原本太贵的多步任务，才有机会持续运行。 9月10日官方发布，成绩为官方测评：<e type=\"web\" href=\"https%3A%2F%2Fapi-docs.deepseek.com%2Fupdates%2F\" title=\"Change%20Log%20%7C%20DeepSeek%20API%20Docs\" />",
-      "likes": 4,
-      "readers": 1171,
-      "files": []
-    },
-    {
-      "topic_id": "22258815148445121",
-      "type": "talk",
-      "create_time": "2026-09-12T14:16:21.424+0800",
-      "digested": true,
-      "title": "光口变多、速率变高，测试工作也...",
-      "content": "光口变多、速率变高，测试工作也跟着增加。泰瑞达在高盛大会上预计，CPO测试设备市场2028年可达3亿—7亿美元。光互连的成长不只在模块，还在出厂前如何把良率和性能测清楚。 高盛9月10日半导体大会第二日纪要，第11页；市场规模为管理层预测。",
-      "likes": 5,
-      "readers": 1149,
-      "files": []
-    },
-    {
-      "topic_id": "45548814141541218",
-      "type": "talk",
-      "create_time": "2026-09-11T20:43:00.010+0800",
-      "digested": true,
-      "title": "AI总预算增速放缓，不代表芯片...",
-      "content": "AI总预算增速放缓，不代表芯片投入同步放缓。大摩初步预计2028年云厂商资本开支增12%，2.5D封装产能却增约50%。大芯片和更多应用，正在增加先进封装需求。值得看的，是钱往哪些环节走。（9月10日行业研究；产能与金额口径不同，均为预测）",
-      "likes": 6,
-      "readers": 1235,
-      "files": [
-        "摩根士丹利-AI供应链：2028年初步展望——AI半导体 vs. CSP资本开支增速-260910.pdf"
-      ]
-    },
-    {
-      "topic_id": "55521182825842844",
-      "type": "talk",
-      "create_time": "2026-09-11T18:30:48.815+0800",
-      "digested": true,
-      "title": "AI芯片继续堆性能，封装也要装...",
-      "content": "AI芯片继续堆性能，封装也要装下更多计算和存储单元。台积电在高盛大会上给出从约5.5倍到约14倍光罩面积的封装路线图。值得看的不只是晶圆产能，还有大尺寸封装怎样把多颗芯片连成一个系统。 高盛9月10日半导体大会第二日纪要，第6页；14倍为未来数年规划。",
-      "likes": 6,
-      "readers": 1236,
+      "readers": 1128,
       "files": []
     }
   ]
