@@ -1,11 +1,8 @@
 {
-  "time": "2026-11-15 06:00",
-  "headline": "【口罩哥·新】涉及长鑫科技：《K Research 11.1...》(11-13T05:44)",
+  "time": "2026-11-16 06:00",
+  "headline": "单日 -3.32%，幅度超 3% 阈值",
   "important": [
-    "【创业板指】单日 -3.32%，幅度超 3% 阈值",
-    "【口罩哥·新】涉及长鑫科技：《K Research 11.1...》(11-13T05:44)",
-    "【口罩哥·新】涉及长鑫科技：《K Research 11.1...》(11-12T14:56)",
-    "【口罩哥·新】涉及长鑫科技：《• 半导体涨价这事，得拆成两个...》(11-12T10:55)"
+    "【创业板指】单日 -3.32%，幅度超 3% 阈值"
   ],
   "deltas": [
     "上证指数 3634.35→3634.35 (+0.00，较上次 +0.00%)",
@@ -17,102 +14,6 @@
     "比亚迪 79.99→79.99 (+0.00，较上次 +0.00%)",
     "长鑫科技 39.98→39.98 (+0.00，较上次 +0.00%)"
   ],
-  "newKzg": [
-    {
-      "time": "11-13T23:48",
-      "title": "K research 独家研报...",
-      "digested": false
-    },
-    {
-      "time": "11-13T19:51",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T15:47",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T14:51",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T13:52",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T10:47",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T08:53",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T06:44",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-13T05:44",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T23:14",
-      "title": "K research 独家研报...",
-      "digested": false
-    },
-    {
-      "time": "11-12T23:13",
-      "title": "现在一个完美对冲是从 AMD ...",
-      "digested": false
-    },
-    {
-      "time": "11-12T20:49",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T19:45",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T17:49",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T16:54",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T14:56",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T13:51",
-      "title": "K Research 11.1...",
-      "digested": true
-    },
-    {
-      "time": "11-12T12:57",
-      "title": "• 10月进口同比+41.6%...",
-      "digested": true
-    },
-    {
-      "time": "11-12T10:55",
-      "title": "• 半导体涨价这事，得拆成两个...",
-      "digested": true
-    }
-  ],
+  "newKzg": [],
   "quotesOk": true
 }
